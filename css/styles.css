@@ -1,0 +1,171 @@
+body{
+    margin: 0;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    color: #40514E;
+}
+
+
+h1{
+    margin: 10px auto 0 auto;
+    font-family: 'Sacramento', cursive;
+    font-size: 3.5rem;
+    color: #679b9b;
+}
+
+h2{
+    font-family: 'Montserrat', serif;
+    font-size: 2.5rem;
+    color:#ffb6b6;
+}
+
+h3 {
+    font-family: 'Montserrat', serif;
+    color:#ffb6b6;
+    margin-bottom: 20px;
+}
+
+hr {
+    border-color: #aacfcf;
+    border-style: none;
+    border-top-style: dotted;
+    border-width: 5px;
+    width: 8%;
+    margin: 80px auto;
+}
+
+p{
+    line-height: 2;
+}
+
+a{
+    color: #679b9b;
+    font-family: 'Merriweather', serif;
+    text-decoration: none;
+}
+
+a:hover{
+    font-weight:1000;
+    text-decoration:underline;
+}
+
+.top-container{
+    background-color: #fde2e2;
+    position: relative; 
+    padding: 100px 0 250px 0;
+}
+
+.top-cloud{
+    position: absolute;
+    right: 250px;
+    top: 40px;
+}
+
+.front-intro{
+    color: #679b9b;
+    font-weight: normal;
+}
+
+.bottom-cloud{
+    position: absolute;
+    left: 250px;
+}
+
+.front-bottom-img{
+    position: absolute;
+    margin-top: 20px;
+    left: 200px;
+    width: 250px;
+}
+
+.middle-container{
+    margin: 50px 0;
+}
+
+.profile-img{
+    height: 200px;
+}
+
+.circular {
+    border-radius: 100%;
+}
+
+.intro{
+    width: 60%;
+    margin: 0 auto;
+}
+
+.research{
+    width:80%;
+    margin: 0 auto;
+}
+
+.education-row{
+    margin: 50px auto;
+    width: 70%;
+}
+
+.school-logo{
+    width: 150px;
+}
+
+.bottom-container{
+    background-color: #ffb6b6;
+    padding: 20px 0;
+}
+
+.BUTTON_IFC {
+    background: #aacfcf;
+    background-image: linear-gradient(to bottom, #aacfcf, #679b9b);
+    border-radius: 8px;
+    color: #FFFFFF;
+    font-family: 'Merriweather', serif;
+    font-size: 15px;
+    font-weight: 100;
+    padding: 10px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    margin: 10px;
+}
+    
+.BUTTON_IFC:hover {
+    background: #679b9b;
+    background-image: linear-gradient(to bottom, #679b9b, #aacfcf);
+    order-radius: 8px;
+    text-decoration: none;
+}
+
+.copyright{
+    color:#fcf8f3;
+    font-size: 0.8rem;
+    padding: 10px 0;
+}
+
+
+/******************Publication******************/
+
+.my-name{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.publications{
+    text-align: left;
+    width: 80%;
+    margin: 50px;
+}
+
+.publications-list:before {
+    content:"• ";
+}
+
+.small-separation {
+    border-color: #aacfcf;
+    border-style: none;
+    border-top-style: dotted;
+    border-width: 5px;
+    width: 5%;
+    margin: 30px auto;
+}

@@ -1,359 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>WanjiaGuo</title>
-<!-- for-mobile-apps -->
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
-		function hideURLbar(){ window.scrollTo(0,1); } </script>
-<!-- //for-mobile-apps -->
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-<link href="css/font-awesome.css" rel="stylesheet" type="text/css" media="all" />
-<link rel="stylesheet" href="css/chocolat.css" type="text/css" media="screen"><!-- chocolate css for gallery light box-->
-<!-- animation -->
-<link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
-<!-- //animation --> 
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-<script src="js/jquery-1.11.1.min.js"></script>
-<script src="js/bootstrap.js"></script>
-<script type="text/javascript">
-	jQuery(document).ready(function($) {
-		$(".scroll").click(function(event){		
-			event.preventDefault();
-			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-		});
-	});
-</script>
-<!-- pdfShow-JavaScript -->
-<script type="text/javascript" src="js/pdfobject.min.js"></script>
-<script>
-	$(function(){
-		pdfShow = function(obj){
-			var pdfUrl = $(obj).attr("data-pdf");
-			PDFObject.embed(pdfUrl, "#pdf_container");
-			var x = window.open();
-			x.document.open();
-			var pdf = $("#pdf_container").html();
-			x.document.write(pdf);
-			x.document.close();
-		}
-		// $("#pdfView").click(function(){
-		// 	PDFObject.embed("doc/CV_WanjiaGuo.pdf", "#pdf_container");
-		// 	var x=window.open();
-		// 	x.document.open();
-		// 	var pdf = $("#pdf_container").html();
-		// 	x.document.write(pdf);
-		// 	x.document.close();
-		// })
-	})
-</script>
-<!-- //pdfShow-JavaScript -->
-<!-- onlinefonts -->
-<!-- <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700" rel="stylesheet">-->
-<!-- <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:200,300,400,700" rel="stylesheet">-->
-<!-- //onlinefonts -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WanjiaGuo</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Playfair+Display|Sacramento&display=swap" rel="stylesheet">
 </head>
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top"> 
-		<div id="pdf_container" style="display:none"></div>
-		<!-- header -->
-		<div class="header-w3layouts"> 
-			<!-- Navigation -->
-			<nav class="navbar navbar-default navbar-fixed-top">
-				<div class="container">
-					<div class="navbar-header page-scroll">
-						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-							<span class="sr-only">Vitae</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-						<!--<h1><a class="navbar-brand" href="index.html">Vitae</a></h1>-->
-					</div> 
-					<!-- Collect the nav links, forms, and other content for toggling -->
-					<div class="collapse navbar-collapse navbar-ex1-collapse">
-						<ul class="nav navbar-nav navbar-right">
-							<!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-							<li class="hidden"><a class="page-scroll" href="#page-top"></a></li>
-							<li><a class="page-scroll scroll active" href="#home">Home</a></li>
-							<li><a class="page-scroll scroll" href="#about">About</a></li>
-							<li><a class="page-scroll scroll" href="#port">Research</a></li>
-							<li><a class="page-scroll scroll" href="#edu">Experience</a></li>
-							<li><a class="page-scroll scroll" href="#news">News</a></li>
-						</ul>
-					</div>
-					<!-- /.navbar-collapse -->
-				</div>
-				<!-- /.container -->
-			</nav>  
-		</div>	
-		<!-- //header -->
-		<div class="header jarallax" id="home">
-			<div class="container">
-				<div class="banner-text text-center">
-					<h2> Wanjia Guo </h2>
-					<h3>- 郭菀葭 -<h3>
-					<!-- <h3> - 郭菀葭 - </h3>-->
-					<a href="https://kuhllab.com" style="display:inline-block;margin:0px">Kuhl Lab.</a>
-					<a href="https://www.uoregon.edu" style="display:inline-block;margin:0px">University of Oregon.</a>
-					<div class="w3l-button banner-btn">
-						<a href="pdf/CV_WanjiaGuo.pdf" target="_blank">CV</a>
-					</div>
-				</div>	
-				<div class="w3-arrow bounce animated">
-				<a href="#about" class="scroll"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
-			</div>
-			</div>
-			
-		</div>
-		
-	<div class="about" id="about">
-		<div class="container">	
-			<h3 class="w3l-heading">About me</h3>
-			<div class="col-md-4 w3-about-top">
-				<img src="images/3.jpg" class="img-responsive" alt="about-img"/>
-			</div>
-			<div class="col-md-8 w3l-about">
-					<div class="w3ls-heading">
-						<h2>I'm a second year graduate student in Brice Kuhl's lab at the University of Oregon.</h2>
-					</div>
-					<div class="w3ls-about-info">
-						<p>I am currently working on how pattern differentation happens in the hippocampus with fMRI. I use Python and R for data collection and analysis. Outside the lab, I enjoy hiking, cooking and (failing at) baking (and trying again). <a href="https://wanjiag.github.io/food_gallery/">Here</a> are some pictures from the kitchen.</p>
-					</div>
-					<div class="w3l-button">
-						<a href="#" data-toggle="modal" data-target="#myModal">Contact Me</a>
-					</div>
-			</div>	
-			<div class="clearfix"></div>
-		</div>
-		
-	</div>
-	<!-- modal -->
-	<div class="modal about-modal fade" id="myModal" tabindex="-1" role="dialog">
-		<div class="modal-dialog" role="document">
-			<div class="modal-content">
-				<div class="modal-header"> 
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
-						<!-- <h4 class="modal-title">Vitae</h4>-->
-				</div> 
-				<div class="modal-body">
-					<div class="about"> 
-						<div class="col-md-4 col-sm-4  col-xs-4 about-left ">
-							<img src="images/3.jpg" class="img-responsive" alt=""/>
-						</div>
-						<div class="col-md-8 col-sm-8 col-xs-8 about-right wthree">
-							<h3>Hi, I'm <span>Wanjia </span></h3>
-							<h4> </h4>
-							<ul class="address">
-								<li>
-									<ul class="agileits-address-text">
-										<li><b>E-mail</b></li>
-										<li><a href="mailto:wanjiag@uoregon.edu"> wanjiag@uoregon.edu</a></li>
-									</ul>
-								</li>
-								<!-- <li>
-									<ul class="agileits-address-text">
-										<li><b>ADDRESS </b></li>
-										<li>Lewis Integrative Science Building, room 348</li>
-										<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Eugene, OR, 97401</li>
-									</ul>
-								</li>-->
-								<li>
-									<ul class="agileits-address-text">
-										<li><b>Twitter</b></li>
-										<li><a href="https://twitter.com/GWJ_Amber?lang=en">@GWJ_Amber</a></li>
-									</ul>
-								</li>
-								<li>
-									<ul class="agileits-address-text">
-										<li><b>Github</b></li>
-										<li><a href="https://github.com/wanjiag"> wanjiag</a></li>
-									</ul>
-								</li>
-							</ul> 
-						</div> 
-						<div class="clearfix"> </div>
-				</div>
-			</div>
-		</div>
-	</div>
-	</div>
-	<!-- //modal -->
-	<!-- Portfolio -->
-    <div class="portfolio" id="port">
-        <div class="port-head">
-			<h3 class="w3l-heading">Research</h3>
-		</div>
-        <ul class="simplefilter">
-            <!-- <li class="active" data-filter="all">All</li> -->
-            <li class="active" data-filter="1">Papers</li>
-            <li data-filter="2">Posters</li>
-            <li data-filter="3">Resources</li>
-        </ul>
- 		<div class="filtr-container">
- 			<div data-category="1" class="filtr-item">
- 				<p>Elizabeth C. Mormino, Tyler Toueg, Carmen Azevedo, Jessa B. Castillo, <b>Wanjia Guo</b>, Ayesha Nadiadwala, Nicole Corso, Jacob N. Hall, Alexandra N. Trelle, Marc Harrison, Sharon Sha, Gayle Deutsch, Michelle James, Carolyn A. Fredericks, Mary Ellen Koran, Michael Zeineh, Kathleen Poston, Michael D. Greicius, Mehdi Khalighi, Guido A. Davidzon, Bin Shen, Greg Zaharchuk, Anthony D. Wagner, Frederick T. Chin. Tau PET imaging with 18F-PI2620 in aging and neurodegenerative diseases. (Submitted).</p>
- 				<p><b>-</b></p>
-     			<p>Jiefeng Jiang, Shao-Fang Wang, <b>Wanjia Guo</b>, Carolyn Fredericks, & Anthony D. Wagner. Prefrontal reinstatement of contextual task demand is mediated by separable hippocampal patterns. (Submitted).</p>
- 			</div>
- 			<div data-category="2" class="filtr-item" style="display:none">
+<body>
+    <div class="top-container"> 
+        <img class="top-cloud" src="./images/cloud.png" alt="could-img">
+        <h1>I'm Wanjia Guo.</h1>
+        <p class="front-intro">a second year graduate student in 
+            <a href="https://kuhllab.com/">Brice Kuhl's Lab</a>
+             at 
+             <a href="https://www.uoregon.edu/">the University of Oregon</a>
+             .</p>
+        <img class="bottom-cloud" src="./images/cloud.png" alt="could-img">
+        <img class="front-bottom-img" src="./images/brain.gif" alt="oregon-wisconsin-gif">
+    </div>
 
- 				<p><b>Highlighted:</b></p>
+    <div class="middle-container">
+            <div class="profile">
+              <img class = "circular profile-img" src="./images/wanjia.jpeg" alt="wanjiaguo">
+              <h2>Hello.</h2>
+              <p class="intro">As a cognitive neuroscientist in traning, 
+                  I am currently thinking about how pattern differentation happens in the hippocampus. 
+                  I use Python and R for data collection and analysis. 
+                  Outside the lab, I enjoy learning new programming languages (I recently learned to code this website!), cooking, and baking. 
+                  <a href="https://wanjiag.github.io/food_gallery/">Here</a> are some pictures from my kitchen.</p>
+            </div>
 
- 				 <p>
- 					<b>Guo, W.</b>, Molitor, R., Favila, S. E., Kuhl, B. A. (2019). Repulsion of hippocampal representations is time-locked to resolution of memory interference. <i>2020 CNS annual meeting</i>, Boston, MA.</a>
-				</p>
+            <hr>
 
- 				<p>
- 					<b>Guo, W.</b>, Kim, G., Favila, S. E., Kuhl, B. A. (2019). Repulsion of competing hippocampal representations parallels learning-related reductions in memory interference. <i>2019 annual meeting of the SfN</i>, Chicago, IL.<a href="pdf/2019_SfN_Guo.pdf" target="_blank">[pdf]</a>
-				</p>
+            <div class="research">
+                    
+                    <h2>Research.</h2>
+                    <a class="BUTTON_IFC" href="./pdf/CV_WanjiaGuo.pdf">My CV</a>
+                    <a class="BUTTON_IFC" href="./publications.html">Publications</a>
+                    <a class="BUTTON_IFC" href="./posters.html">Conferences Presentations</a>
+                    <a class="BUTTON_IFC" href="./resources.html">Other Resources</a>
+            </div>
 
-				<p>
-					Jiang, J., Wang, S. F., <b>Guo, W.</b>, Wagner, A. (2019). Prefrontal reinstatement of contexual task demand is mediated by repulsion in hippocampal activity patterns between contexts. <i>2019 annual meeting of the SfN</i>, Chicago, IL. <a href="pdf/2019_SfN_Jiang.pdf" target="_blank">[pdf]</a>
+            <hr>
 
-				<p>
- 					Mormino, E.C., Nadiadwala, A., Azevedo, C., <b>Guo, W.</b>, Hall, J., Trelle, A. N., Sha, S., Fredericks, C. A., Greicius, M. D., Srinivas, S. M., James, M. L., Zaharchuk, G., Wagner, A. D., Chin, F. T. (2018). Tau PET imaging with PI2620 in aging and Alzheimer’s disease. <i>AAIC 2018</i>, Chicago, IL. <a href="pdf/2018_AAIC_PI2620.pdf" target="_blank">[pdf]</a>
- 				</p>
- 				</br>
-				<p><b>For other poster presentations, please check out my <a href="pdf/CV_WanjiaGuo.pdf" target="_blank">CV</a>.</b></p>
-				<p>
+            <div class="research-experience">
+                    <h2>Experience.</h2>
 
- 			</div>
- 			<div data-category="3" class="filtr-item" style="display:none">
- 				<p>Here is a list of online resources that I've benefited a lot from or use on a daily basis.</p>
- 				<!--<p><b>- Data Analysis -</b></p>-->
- 				</br>
- 				<p><b> Packages </b></p>
- 				<p> - Nipype: <a href="https://nipype.readthedocs.io/en/latest/#">Link</a></p>
- 				<p> - Nilearn: <a href="https://nilearn.github.io/">Link</a></p>
- 				<p> - fmriprep: <a href="https://fmriprep.readthedocs.io/en/stable/index.html">Link</a></p>
- 				<p> - PsychoPy: <a href="https://www.psychopy.org/">Link</a></p>
- 				</br>
- 				<p><b> Toturials/Classes/Books </b></p>
- 				<p> - Javascript, CSS, and MTurk Tutorial by Timothy Brady: <a href="https://bradylab.ucsd.edu/ttt/">Link</a></p>
- 				<p> - fMRI Bootcamp by Rebecca Saxe from MIT: <a href="https://www.youtube.com/watch?v=yA65FuSpOMs&index=1&list=PLyGKBDfnk-iDVpUGSR_GlDmQrZOS0Lk6k">YouTube videos</a></p>
- 				<p> - Neural network course (CS231n) by Fei-Fei Li, Andrej Karpathy, and Justin Johnson from Stanford: <a href="https://cs231n.stanford.edu/2016/">Course website</a></p>
- 				<p> - <i>Neural Network and Deep Learning</i> by Michael Nielsen: <a href="https://neuralnetworksanddeeplearning.com/index.html">Online book</a></p>
- 			</div>
- 			<div class="clearfix"> </div>
- 		</div>
+                    <div class="education-row">
+                            <img class="school-logo" src="images/oregon.png" alt="oregon-duck">
+                            <h3>2018-present: University of Oregon</h3>
+                            <p>Advisor: 
+                                <a href="https://kuhllab.com/">Brice Kuhl</a>.</p>
+                            <p>PhD student in the Psychology Department with cognitive neuroscience focus.</p>
+                      </div>
 
-	</div>
+                    <div class="education-row">
+                      <img class="school-logo" src="images/stanford.png" alt="stanford-tree">
+                      <h3>2016-2018: Stanford University</h3>
+                      <p>PI: 
+                          <a href="https://memorylab.stanford.edu/">Anthony Wagner</a>
+                           and 
+                           <a href="http://med.stanford.edu/mormino-lab.html">Beth Mormino</a>.</p>
+                      <p>Research Assistant at Department of Psychology and Neurology.</p>
+                    </div>
 
-<!--Education-->
-	<div id="edu" class="agile-edu">
-		<div class="container">	
-				<h3 class="w3l-heading">Experience</h3>
-			<div class="work-info"> 
-				<div class="col-md-6 col-sm-6 col-xs-6 work-right work-right2"> 
-				</div>
-				<div class="col-md-6  col-sm-6 col-xs-6  work-left work-left2"> 
-					<div class="col-md-6  col-sm-6 col-xs-6  work1">
-						<h4>Graduate Student</h4>
-						<p>Advisor: Brice Kuhl. Cognitive Neuroscience Area, Psychology Department, University of Oregon.</p></div>
-					<div class="col-md-6  col-sm-6 col-xs-6  work2">
-						<h5>2018 - present</h5>
-						<span></span>
-					</div>
-				</div>
-			</div>
-			<div class="work-info"> 
-				<div class="col-md-6  col-sm-6 col-xs-6" style="height:50%"> 
-				</div>
-				<div class="col-md-6  col-sm-6 col-xs-6  work-right"> 
-					<div class="col-md-6  col-sm-6 col-xs-6 work2">
-						<span></span>
-						<h5>2016 - 2018</h5>
-					</div>	
-					<div class="col-md-6  col-sm-6 col-xs-6  work-right1">
-						<h4>Research Assistant</h4>
-						<p>PIs: Anthony Wagner & Beth Mormino. Psychology and Neurology Departments, Stanford University.</p>
-					</div>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-			<div class="work-sec-2">
-			<div class="work-info"> 
-				<div class="col-md-6  col-sm-6 col-xs-6  work-right work-right2"> 
-				</div>
-				<div class="col-md-6  col-sm-6 col-xs-6  work-left work-left2 "> 
-					<div class="col-md-6 col-sm-6 col-xs-6  work1">
-						<h4>Undergraduate</h4>
-						<p>Advisor: Brad Postle. Psychology and Neurobiology Major, University of Wisconsin-Madison.</p></div>
-					<div class="col-md-6  col-sm-6 col-xs-6  work2">
-						<h5> 2012 - 2016</h5>
-						<span></span>
-					</div>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-			<span class="edu-circle"></span>
-			</div>
-		</div>
-	</div>
+                    <div class="education-row">
+                            <img class="school-logo" src="images/bager.png" alt="bucky-bager">
+                            <h3>2012-2016: University of Wisconsin-Madison</h3>
+                            <p>Advisor: 
+                                <a href="https://postlab.psych.wisc.edu/">Brad Postle</a>.</p>
+                            <p>B.S. in Psychology and Neurobiology.</p>
+                          </div>
+            </div>
 
-<!--Education-->
-    <div class="portfolio" id="news">
-        <div class="port-head">
-			<h3 class="w3l-heading">News</h3>
-		</br>
-			<p> 06-06-19: NEWs Section is ALIVE! <b>Jiefeng is hiring! Check it out <a href="https://web.stanford.edu/~jfj/">here</a></b></p>
-		</div>
-	</div>
+            <hr>
 
-<!-- footer -->
-<div class="agileits_w3layouts-footer text-center">
-	<div class="container">
-		<p>Copyright &copy; 2019 by Wanjia Guo</p><!--<a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a>-->
-	</div>
-</div>	
-<!-- //footer -->	
-<!-- //contact -->
-<!-- PopUp-Box-JavaScript -->
-		<script src="js/jquery.chocolat.js"></script>
-		<script type="text/javascript">
-			$(function() {
-				//$('.filtr-item a').Chocolat();
-			});
-		</script>
-	<!-- //PopUp-Box-JavaScript -->	
-	<!-- fliter-JavaScript -->
-		<script src="js/jquery.filterizr.js"></script>
-		<script src="js/controls.js"></script>
-		<script type="text/javascript">
-			$(function() {
-				$('.filtr-container').filterizr();
-				 var filter = $('.simplefilter').children('.active').attr('data-filter');
-				 if(filter == 'all'){
-				 	var contentArr = $('.filtr-item');
-				 	var contentHeight = 0;
-				 	for(var i=0; i<contentArr.length; i++){
-				 		contentHeight += contentArr[i].clientHeight;
-				 	
-				 	$('.filtr-container').css({
-				 		height:contentHeight
-				 	})
-				 }
-				
-			});
-		</script>
-	<!-- //fliter-JavaScript -->
-<script src="js/jarallax.js"></script>
-<script src="js/SmoothScroll.min.js"></script>
-<script type="text/javascript">
-	/* init Jarallax */
-	$('.jarallax').jarallax({
-		speed: 0.5,
-		imgWidth: 1366,
-		imgHeight: 768
-	})
-</script>
-
-<!-- start-smoth-scrolling -->
-	<script type="text/javascript" src="js/easing.js"></script>
-<!-- //here ends scrolling icon -->
-	
-
-</body>
+            <div class="contact-me">
+                    <a class="BUTTON_IFC" href="https://github.com/wanjiag">Github</a>
+                    <a class="BUTTON_IFC" href="https://twitter.com/GWJ_Amber">Twitter</a>
+                    <a class="BUTTON_IFC" href="mailto:wanjiag@uoregon.com">Email</a>
+            </div>
+    </div>
+          
+          
+    <div class="bottom-container">
+    <p class="copyright">© 2020 Wanjia Guo.</p>
+    </div>
+ </body>
 </html>
