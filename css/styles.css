@@ -64,6 +64,8 @@ a:hover{
 .front-intro{
     color: #679b9b;
     font-weight: normal;
+    width: 60%;
+    margin: 10px auto;
 }
 
 .bottom-cloud{
