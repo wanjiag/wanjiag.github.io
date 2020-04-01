@@ -30,7 +30,7 @@ hr {
     border-style: none;
     border-top-style: dotted;
     border-width: 5px;
-    width: 8%;
+    width: 15%;
     margin: 80px auto;
 }
 
@@ -57,7 +57,7 @@ a:hover{
 
 .top-cloud{
     position: absolute;
-    right: 300px;
+    right: 200px;
     top: 40px;
 }
 
@@ -70,13 +70,13 @@ a:hover{
 
 .bottom-cloud{
     position: absolute;
-    left: 300px;
+    left: 200px;
 }
 
 .front-bottom-img{
     position: absolute;
     margin-top: 20px;
-    left: 250px;
+    left: 150px;
     width: 250px;
 }
 
@@ -168,6 +168,6 @@ a:hover{
     border-style: none;
     border-top-style: dotted;
     border-width: 5px;
-    width: 5%;
+    width: 15%;
     margin: 30px auto;
 }
