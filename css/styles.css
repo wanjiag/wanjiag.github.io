@@ -122,7 +122,7 @@ a:hover{
     border-radius: 8px;
     color: #FFFFFF;
     font-family: 'Merriweather', serif;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 100;
     padding: 10px;
     text-decoration: none;
@@ -136,7 +136,7 @@ a:hover{
     background: #679b9b;
     background-image: linear-gradient(to bottom, #679b9b, #aacfcf);
     order-radius: 8px;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .copyright{
