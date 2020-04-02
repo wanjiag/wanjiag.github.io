@@ -118,8 +118,8 @@ a:hover{
 
 .BUTTON_IFC {
     background: #aacfcf;
-    background-image: linear-gradient(to bottom, #aacfcf, #679b9b);
-    border-radius: 8px;
+    background-image: linear-gradient(to bottom, #aacfcf, #aacfcf);
+    border-radius: 10px;
     color: #FFFFFF;
     font-family: 'Merriweather', serif;
     font-size: 16px;
