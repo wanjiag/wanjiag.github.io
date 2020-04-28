@@ -64,23 +64,6 @@ a:hover{
     top: 40px;
 }
 
-.nav-tabs {
-    border-bottom: 0;
-}
-
-.navbar-light .navbar-nav .nav-link.active{
-    color: #40514E;
-}
-
-.navbar-light .navbar-nav .nav-link {
-    color: #679b9b;
-}
-
-.nav-link:hover{
-    font-weight:1000;
-    color: #679b9b;
-}
-
 .front-intro{
     color: #679b9b;
     font-weight: normal;
@@ -99,6 +82,29 @@ a:hover{
     left: 150px;
     width: 250px;
 }
+
+.nav-container{
+    background-color: #fde2e2;
+    padding: 0 15%;
+}
+
+.nav-tabs {
+    border-bottom: 0;
+}
+
+.navbar-light .navbar-nav .nav-link.active{
+    color: #40514E;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #679b9b;
+}
+
+.nav-link:hover{
+    font-weight:1000;
+    color: #679b9b;
+}
+
 
 .middle-container{
     margin: 50px 0;
@@ -201,7 +207,7 @@ a:hover{
 .publications{
     text-align: left;
     width: 80%;
-    margin: 50px;
+    margin: 50px 10%;
 }
 
 .publications-list:before {
