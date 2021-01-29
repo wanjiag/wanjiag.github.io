@@ -68,6 +68,7 @@ a:hover{
 }
 
 .front-intro{
+    font-family: Montserrat, serif;
     color: #679b9b;
     font-weight: normal;
     width: 60%;
@@ -97,15 +98,22 @@ a:hover{
 
 .navbar-light .navbar-nav .nav-link.active{
     color: #40514E;
+    font-family: Montserrat, serif;
 }
 
 .navbar-light .navbar-nav .nav-link {
     color: #679b9b;
+    font-family: Montserrat, serif;
 }
 
 .nav-link:hover{
     font-weight:1000;
     color: #679b9b;
+    font-family: Montserrat, serif;
+}
+
+.dropdown-item{
+    font-family: Montserrat, serif;
 }
 
 
@@ -222,6 +230,7 @@ a:hover{
 }
 
 .copyright{
+    font-family: 'Montserrat', serif;
     color:#fcf8f3;
     font-size: 0.8rem;
     padding: 10px;
