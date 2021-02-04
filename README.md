@@ -1,2 +1,3 @@
 ### Personal website: https://wanjiag.github.io/
-Written and developed by Wanjia Guo. 
+
+Written in html/CSS.
