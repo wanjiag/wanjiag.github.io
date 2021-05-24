@@ -98,7 +98,9 @@ a:hover{
 
 .navbar-light .navbar-nav .nav-link.active{
     color: #40514E;
-    font-family: Montserrat, serif;
+    font-weight: 1000;
+    font-family:  Montserrat, serif;
+    border-color: #fff;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -106,10 +108,11 @@ a:hover{
     font-family: Montserrat, serif;
 }
 
-.nav-link:hover{
-    font-weight:1000;
+.navbar-light .nav-link:hover{
+    font-weight: normal;
     color: #679b9b;
     font-family: Montserrat, serif;
+    background: #fff
 }
 
 .dropdown-item{
