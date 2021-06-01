@@ -29,6 +29,13 @@ h3 {
     font-weight: bolder;
 }
 
+h4 {
+    font-family: 'Montserrat', serif;
+    color:#40514E;
+    margin: 10px 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
 
 hr {
     border-color: #aacfcf;
@@ -43,6 +50,7 @@ p{
     line-height: 2;
 }
 
+
 a{
     color: #679b9b;
     font-family: 'Merriweather', serif;
@@ -50,9 +58,10 @@ a{
 }
 
 a:hover{
-    color:#40514E;
-    font-weight:1000;
-    text-decoration: none
+    color:#ffb6b6;/*#40514E;*/
+    /*font-weight:1000;*/
+    /*background: rgb(233, 233, 233);*/
+    text-decoration: none;
 }
 
 .top-container{
@@ -67,13 +76,13 @@ a:hover{
     top: 40px;
 }
 
-.front-intro{
+/*.front-intro{
     font-family: Montserrat, serif;
     color: #679b9b;
     font-weight: normal;
     width: 60%;
     margin: 10px auto;
-}
+}*/
 
 .bottom-cloud{
     position: absolute;
@@ -98,7 +107,7 @@ a:hover{
 
 .navbar-light .navbar-nav .nav-link.active{
     color: #40514E;
-    font-weight: 1000;
+    font-weight: normal;
     font-family:  Montserrat, serif;
     border-color: #fff;
 }
@@ -135,7 +144,8 @@ a:hover{
 
 .intro{
     width: 60%;
-    margin: 0 auto;
+    margin: 0 auto 75px;
+    text-align:justify;
 }
 
 .research{
@@ -157,8 +167,10 @@ a:hover{
 }
 
 .school-logo{
-    width: 150px;
-    margin-left: 0px;
+    width: 160px;
+    height: 100%;
+    float: left;
+    padding: 20px 20px 20px 0px;
 }
 
 .badger{
@@ -178,10 +190,6 @@ a:hover{
 
 .front-page-link{
     color:#40514E;
-}
-
-.front-page-link:hover{
-    color:#679b9b;
 }
 
 /* .BUTTON_IFC {
@@ -224,10 +232,6 @@ a:hover{
     max-width: 100px;
 }
 
-.subsection-img:hover{
-    background: rgb(233, 233, 233);
-}
-
 .contact-me{
     padding: 0 25%;
 }
@@ -240,6 +244,10 @@ a:hover{
 }
 
 
+.research-desp{
+    margin-left: 50px;
+}
+
 /******************Publication******************/
 
 .my-name{
@@ -248,13 +256,18 @@ a:hover{
 }
 
 .publications{
-    text-align: left;
+    text-align: justify;
     width: 80%;
     margin: 50px 10%;
 }
 
 .publications-list:before {
-    content:"‣ ";
+    content:"⟣ ";
+}
+
+.small-publications-list{
+    font-size: 0.8rem;/*
+    font-family: italic;*/
 }
 
 .small-separation {
