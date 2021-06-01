@@ -145,7 +145,6 @@ a:hover{
 .intro{
     width: 60%;
     margin: 0 auto 75px;
-    text-align:justify;
 }
 
 .research{
@@ -243,10 +242,6 @@ a:hover{
     padding: 10px;
 }
 
-
-.research-desp{
-    margin-left: 50px;
-}
 
 /******************Publication******************/
 
