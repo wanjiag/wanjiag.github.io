@@ -251,7 +251,7 @@ a:hover{
 }
 
 .publications{
-    text-align: justify;
+    text-align: left;
     width: 80%;
     margin: 50px 10%;
 }
