@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>WanjiaGuo</title>
+    <title>Guo Wanjia</title>
     <link rel="icon" href="favicon.ico">
     
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>   
-    <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Playfair+Display|Sacramento&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Liter|Montserrat|Playfair+Display|Sacramento&display=swap" rel="stylesheet">
 
     <!-- CSS Style Sheet -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -21,18 +21,36 @@
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
+  <script>
+    // Reset all hover images on page load
+    window.onload = function() {
+      document.querySelector('img[src="images/Paperlogo_hover.png"]')?.setAttribute('src', 'images/Paperlogo.png');
+      document.querySelector('img[src="images/CVlogo_hover.png"]')?.setAttribute('src', 'images/CVlogo.png');
+      document.querySelector('img[src="images/Projectlogo_hover.png"]')?.setAttribute('src', 'images/Projectlogo.png');
+    };
+
+    // Reset images when returning to the page
+    window.onpageshow = function(event) {
+      if (event.persisted) {
+        document.querySelector('img[src="images/Paperlogo_hover.png"]')?.setAttribute('src', 'images/Paperlogo.png');
+        document.querySelector('img[src="images/CVlogo_hover.png"]')?.setAttribute('src', 'images/CVlogo.png');
+        document.querySelector('img[src="images/Projectlogo_hover.png"]')?.setAttribute('src', 'images/Projectlogo.png');
+      }
+    };
+  </script>
+
 </head>
 <body>
     <div class="top-container"> 
-        <img class="top-cloud" src="./images/cloud.png" alt="could-img">
+        <!-- <img class="top-cloud" src="./images/cloud.png" alt="could-img"> -->
         <h1>Guo Wanjia</h1>
-        <img class="bottom-cloud" src="./images/cloud.png" alt="could-img">
-        <img class="front-bottom-img" src="./images/brain.gif" alt="oregon-wisconsin-gif">
+        <!-- <img class="bottom-cloud" src="./images/cloud.png" alt="could-img"> -->
+        <img class="front-bottom-img" src="./images/brain.gif" alt="brain-gif">
     </div>
 
     <div class="nav-container">
     <!-- Nav Bar -->
-    <nav class="nav nav-tabs navbar-expand-md navbar-light" style="background-color: #fde2e2;">
+    <nav class="nav nav-tabs navbar-expand-md navbar-light" style="background-color: #e2f0fd;">
         <button class="navbar-toggler nav-toggle-icon" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -42,23 +60,18 @@
           <a class="nav-link active" href="index.html">Home</a>
         </li>
           <li class="nav-item">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Research
-            </a>
-              <!-- <a class="nav-link  dropdown-toggle" href="#" role>Research</a> -->
+            <a class="nav-link" href="publications.html">Papers</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">News</a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="./publications.html#publications">Papers</a>
-                <a class="dropdown-item" href="./publications.html#posters">Posters</a>
+                <a class="dropdown-item" href="./updates.html#newnews">New news</a>
+                <a class="dropdown-item" href="./updates.html#posters">Presentations</a>
+                <a class="dropdown-item" href="./updates.html#oldnews">Old news</a>
               </div>
           </li>
-          <!-- <li class="nav-item">
-            <a class="nav-link" href="research.html"> Research</a>
-          </li> -->
           <li class="nav-item">
-              <a class="nav-link" href="resources.html">Resources</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
+            <a class="nav-link" href="mailto:wanjiag@uoregon.com" target="_blank">Email</a>
         </li>
       </ul>
     </div>
@@ -70,39 +83,34 @@
     <div class="middle-container">
             <div class="profile">
               <img class = "circular profile-img" src="./images/wanjia.jpeg" alt="wanjiaguo">
-              <h2>Hello.</h2>
+              <h2>Glad you stopped by.</h2>
+             <!-- <hr>
 
               <p class="intro">
-                I am Wanjia (菀葭), a sixth year Ph.D. candidate in Dr.
-                <a href="https://kuhllab.com/" target="_blank">Brice Kuhl</a>'s Lab 
-                at the 
-                <a href="https://www.uoregon.edu/" target="_blank">University of Oregon</a>.
-                I am currently interested in <em><strong>how the hippocampus helps us to distinguish between similar events.</strong></em>
-                I study this problem using Python and R with behavioral and brain imaging data.
-                Prior to this, I was a research assistant at 
-                <a href="https://www.stanford.edu/" target="_blank">Stanford University</a> working with Dr.
-                <a href="https://memorylab.stanford.edu/" target="_blank">Anthony Wagner</a> and Dr.
-                <a href="http://med.stanford.edu/mormino-lab.html" target="_blank">Beth Mormino</a>,
-                studying biomarkers for health aging with f/MRI and Tau/PET.
-                I finished my undergraduate degree in Psychology and Neurobiology at the 
-                <a href="https://www.wisc.edu/" target="_blank">University of Wisconsin-Madison</a>.
-                Outside the lab, I enjoy exploring new hobbies and hiking in the mountains of Oregon with my dog <a href="./images/chestnut.jpeg" target="_blank">Chestnut</a>. 
-                </p>
+                I am Wanjia (郭菀葭). Beginning in July, I will be a postdoctoral researcher in the Princeton Computational Memory Lab, working with 
+                <a href="https://compmem.princeton.edu" target="_blank">Dr. Ken Norman</a>. My research focuses on the hippocampal neural mechanisms of memory interference resolution, using neuroimaging and computational modeling. 
+
+                <br><br>
+                
+                Before joining Princeton, I worked as an Applied Scientist at Amazon Alexa, where I developed various applications of Large Language Models.
+
+                I received my Ph.D. in Psychology from the <a href="https://www.uoregon.edu/" target="_blank">University of Oregon</a>, under the guidance of 
+                <a href="https://kuhllab.com/" target="_blank">Dr. Brice Kuhl</a>, supported by an <a href="https://researchtraining.nih.gov/programs/fellowships/F31" target="_blank">NRSA predoctoral fellowship</a>. 
+
+                Previously, I conducted post-baccalaureate research at 
+                <a href="https://www.stanford.edu/" target="_blank">Stanford University</a>, working with 
+                <a href="https://memorylab.stanford.edu/" target="_blank">Dr. Anthony Wagner</a> and 
+                <a href="http://med.stanford.edu/mormino-lab.html" target="_blank">Dr. Beth Mormino</a>.
+
+                <br><br>
+                
+                Outside the lab, I enjoy growing house plants, trying my hand at latte art, exploring new hobbies, and spending time with my dog, <a href="chestnut.html">Chestnut</a>. 
+                </p>-->
 
 
             <div class="research">
 
                   <div class="research-list row">
-
-                    <div class = "col-md-4 feature-box">
-                      <a href="./publications.html#publications">
-                        <img class="square-img" src="images/Paperlogo.png" 
-                        onmouseover="this.src='images/Paperlogo_hover.png'"
-                        onmouseout="this.src='images/Paperlogo.png'"
-                        alt=""/></a>
-                      <br>
-                        <a class="front-page-link" href="./publications.html#publications">Publications</a>
-                    </div>
 
                     <div class = "col-md-4 feature-box">
                       <a href="./pdf/CV_WanjiaGuo.pdf">
@@ -116,14 +124,25 @@
                     </div>
 
                     <div class = "col-md-4 feature-box">
-                      <a href="./resources.html">
+                      <a href="./publications.html#publications">
+                        <img class="square-img" src="images/Posterlogo.png" 
+                        onmouseover="this.src='images/Posterlogo_hover.png'"
+                        onmouseout="this.src='images/Posterlogo.png'"
+                        alt=""/></a>
+                      <br>
+                        <a class="front-page-link" href="./publications.html#publications">Publications</a>
+                    </div>
+
+
+                    <div class = "col-md-4 feature-box">
+                      <a href="updates.html">
                         <img class="square-img" src="images/Projectlogo.png" 
                         onmouseover="this.src='images/Projectlogo_hover.png'"
                         onmouseout="this.src='images/Projectlogo.png'"
                         alt="">
                       </a>
                       <br>
-                        <a class="front-page-link" href="./research.html#project">Resources</a>
+                        <a class="front-page-link" href="./updates.html">Updates</a>
                     </div>
 
                   </div>
@@ -132,69 +151,40 @@
 
             </div>
 
-             <hr>
-
-            <div class="contact-me" id = "skills">
-              <h2>Skills.</h2>
-
-              <div class="row">
-
-                <div class = "col-md-6 col-sm-12 feature-box">
-                    <img class="square-img" src="images/Rlogo.png" alt="">
-                    <p class="body">⟣ R ⟢</p>
-                    <p class="body">tidyverse<br>purrr<br>ggplot2</p>
-                </div>
-
-
-                <div class = "col-md-6 col-sm-12 feature-box">
-                  <img class="square-img" src="images/Pythonlogo.png" alt="">
-                  <p class="body">⟣ Python ⟢</p>
-                  <p class="body">Numpy/Pandas<br>scikit-learn<br>Transformers</p>
-                </div>
-
-                <div class = "col-md-6 col-sm-12 feature-box">
-                  <img class="square-img" src="images/Statlogo.png" alt="">
-                  <p class="body">⟣ Stats ⟢</p>
-                  <p class="body">hypothesis testing<br>linear models<br>mixed models<br>machine learning<br>neural network<br>bayesian inference<br></p>
-                  </ul>
-                </div>
-        
-                <div class = "col-md-6 col-sm-12 feature-box">
-                    <img class="square-img" src="images/Programminglogo.png" alt="">
-                    <p class="body">⟣ Others ⟢</p>
-                    <p class="body">Git<br>Bash/Shell<br>html/css<br>JavaScript<br>Bootstrap<br>SQL</p>
-                </div>
-              </div>
-
-            </div>
-
             <hr>
 
             <div >
             <section class="contact-me" id = "contact">
-              <h2>Contact.</h2>
+              <h2>Social.</h2>
                   <div class="row">
-                    <div class = "col-lg-3 col-md-6 col-sm-6 feature-box">
-                      <a href="https://github.com/wanjiag" target="_blank">
-                        <img class="subsection-img" src="images/github_icon.svg" alt="">
-                      </a>
-                    </div>
-            
-                    <div class = "col-lg-3 col-md-6 col-sm-6 feature-box">
-                      <a href="https://twitter.com/wanjiag" target="_blank">
-                        <img class="subsection-img" src="images/twitter_icon.png" alt="">
-                      </a>
-                    </div>
-            
-                    <div class = "col-lg-3 col-md-6 col-sm-6 feature-box">
+
+                    <!--<div class = "col-lg-3 col-md-3 col-sm-6 feature-box">
                       <a href="mailto:wanjiag@uoregon.com" target="_blank">
                         <img class="subsection-img" src="images/mail_icon.png" alt="">
                       </a>
-                    </div>
+                    </div>-->
 
-                    <div class = "col-lg-3 col-md-6 col-sm-6 feature-box">
+                    <div class = "col-lg-3 col-md-3 col-sm-6 feature-box">
+                      <a href="https://github.com/wanjiag" target="_blank">
+                        <img class="subsection-img" src="images/github_icon.svg" alt="">
+                      </a>
+                    </div> 
+
+                    <div class = "col-lg-3 col-md-3 col-sm-6 feature-box">
                       <a href="https://scholar.google.com/citations?user=ueRgpKQAAAAJ&hl=en" target="_blank">
                         <img class="subsection-img" src="images/google_scholar_icon.png" alt="">
+                      </a>
+                    </div>
+
+                    <div class = "col-lg-3 col-md-3 col-sm-6 feature-box">
+                      <a href="https://www.linkedin.com/in/wanjia-guo/" target="_blank">
+                        <img class="subsection-img" src="images/LinkedIn_icon.png" alt="">
+                      </a>
+                    </div>
+
+                    <div class = "col-lg-3 col-md-3 col-sm-6 feature-box">
+                      <a href="https://bsky.app/profile/wanjiag.bsky.social" target="_blank">
+                        <img class="subsection-img" src="images/bluesky.png" alt="">
                       </a>
                     </div>
 
@@ -206,7 +196,7 @@
           
           
     <div class="bottom-container">
-    <p class="copyright">© 2020-2023 Wanjia Guo.</p>
+    <p class="copyright">© 2020-2025 Wanjia Guo.</p>
     </div>
  </body>
 </html>

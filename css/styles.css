@@ -1,29 +1,30 @@
 body{
     margin: 0;
     text-align: center;
-    font-family: 'Merriweather', serif;
-    color: #40514E;
+    font-family: 'Liter', serif;
+    color: #152238;
 }
 
 
 h1{
-    margin: 10px auto 0 auto;
+    margin: 0px auto 0 auto;
     font-family: 'Sacramento', cursive;
-    font-size: 4.5rem;
-    color: #40514E;
+    font-size: 4rem;
+    color: #152238;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 h2{
     font-family: 'Montserrat', serif;
     font-size: 2.5rem;
-    color:#ffb6b6;
+    color:#52a6f3;
     margin: 25px 0;
     font-weight: bolder;
 }
 
 h3 {
     font-family: 'Montserrat', serif;
-    color:#ffb6b6;
+    color:#52a6f3;
     margin: 40px 0 20px;
     font-size: 1.5rem;
     font-weight: bolder;
@@ -31,14 +32,14 @@ h3 {
 
 h4 {
     font-family: 'Montserrat', serif;
-    color:#40514E;
+    color:#52a6f3;
     margin: 10px 0;
     font-size: 1.2rem;
     font-weight: bolder;
 }
 
 hr {
-    border-color: #aacfcf;
+    border-color: #e2f0fd;
     border-style: none;
     border-top-style: dotted;
     border-width: 5px;
@@ -52,8 +53,8 @@ p{
 
 
 a{
-    color: #679b9b;
-    font-family: 'Merriweather', serif;
+    color: #52a6f3;
+    font-family: 'Liter', serif;
     text-decoration: none;
 }
 
@@ -65,9 +66,9 @@ a:hover{
 }
 
 .top-container{
-    background-color: #fde2e2;
+    background-color: #e2f0fd;
     position: relative; 
-    padding: 100px 0 250px 0;
+    padding: 60px 0 130px 0;
 }
 
 .top-cloud{
@@ -91,37 +92,49 @@ a:hover{
 
 .front-bottom-img{
     position: absolute;
-    margin-top: 20px;
-    left: 150px;
-    width: 250px;
+    margin: -45px auto 0 auto;
+    width: 180px;
+    transition: transform 0.3s ease;
+    z-index: 1;
 }
 
+
 .nav-container{
-    background-color: #fde2e2;
+    background-color: #e2f0fd;
     padding: 0 15%;
+    position: relative;
+    z-index: 100;
 }
 
 .nav-tabs {
     border-bottom: 0;
+    position: relative;
 }
 
 .navbar-light .navbar-nav .nav-link.active{
-    color: #40514E;
+    color: #152238;
     font-weight: normal;
     font-family:  Montserrat, serif;
     border-color: #fff;
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: #679b9b;
+    color: #152238;
     font-family: Montserrat, serif;
+    transition: all 0.3s ease;
+    padding: 8px 16px;
+    border-radius: 4px;
+    position: relative;
+    z-index: 100;
 }
 
 .navbar-light .nav-link:hover{
     font-weight: normal;
-    color: #679b9b;
+    color: #152238;
     font-family: Montserrat, serif;
-    background: #fff
+    background: #fff;
+    transform: translateY(-1px);
+
 }
 
 .dropdown-item{
@@ -136,6 +149,11 @@ a:hover{
 .profile-img{
     height: 200px;
     padding: 20px 0;
+    transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+    transform: scale(1.02);
 }
 
 .circular {
@@ -178,17 +196,17 @@ a:hover{
 
 
 .bottom-container{
-    background-color: #ffb6b6;
+    background-color: #52a6f3;
     padding: 16px 0;
 }
 
 .btn-outline-primary {
-    color: #aacfcf;
-    border-color: #aacfcf;
+    color: #52a6f3;
+    border-color: #52a6f3;
 }
 
 .front-page-link{
-    color:#40514E;
+    color:#152238;
 }
 
 /* .BUTTON_IFC {
@@ -214,10 +232,15 @@ a:hover{
     border-radius: 10px;
 } */
 
-.square-img{
-    border-radius: 0%;
-    padding: 20px;
-    width: 100px;
+.square-img {
+    width: 60px;
+    height: 60px;
+    margin: 20px;
+    transition: transform 0.3s ease;
+}
+
+.square-img:hover {
+    transform: scale(1.1);
 }
 
 .subsection-img:hover{
@@ -254,22 +277,62 @@ a:hover{
     text-align: left;
     width: 80%;
     margin: 50px 10%;
+    font-weight: 600;
 }
 
-.publications-list:before {
+.publications-list{
+    font-size: 0.9rem;
+    margin-top: -15px;
+    font-weight: 400;
+}
+
+.resources{
+    text-align: left;
+    width: 80%;
+    margin: 50px 10%;
+}
+
+.resources-list:before {
     content:"⟣ ";
 }
 
 .small-publications-list{
-    font-size: 0.8rem;/*
+    font-size: 0.7rem;/*
     font-family: italic;*/
 }
 
+.presentation-container {
+    display: flex;
+    margin-bottom: 1em;
+}
+
+.presentation-year {
+    flex: 0 0 60px;  /* Fixed width for year column */
+    margin-right: 20px;
+}
+
+.presentation-content {
+    flex: 1;
+}
+
 .small-separation {
-    border-color: #aacfcf;
+    border-color: #e2f0fd;
     border-style: none;
     border-top-style: dotted;
     border-width: 5px;
     width: 15%;
     margin: 50px 0 30px; 
+}
+
+
+
+
+.chestnut-img{
+    width: 500px;
+}
+
+.chestnut{
+    text-align: left;
+    width: 80%;
+    margin: 10px 10%;
 }
