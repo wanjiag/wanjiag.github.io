@@ -38,6 +38,10 @@ h4 {
     font-weight: bolder;
 }
 
+.h1_chestnut {
+    font-size: 2rem;
+}
+
 hr {
     border-color: #e2f0fd;
     border-style: none;
@@ -324,11 +328,9 @@ a:hover{
     margin: 50px 0 30px; 
 }
 
-
-
-
 .chestnut-img{
-    width: 500px;
+    max-width: 500px;
+    width: 75%;
 }
 
 .chestnut{
