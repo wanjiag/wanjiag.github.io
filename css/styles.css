@@ -19,7 +19,6 @@ h2{
     font-size: 2.5rem;
     color:#52a6f3;
     margin: 25px 0;
-    font-weight: bolder;
 }
 
 h3 {
@@ -43,7 +42,7 @@ h4 {
 }
 
 hr {
-    border-color: #e2f0fd;
+    border-color: #cae4fb;
     border-style: none;
     border-top-style: dotted;
     border-width: 5px;
@@ -70,7 +69,7 @@ a:hover{
 }
 
 .top-container{
-    background-color: #e2f0fd;
+    background-color: #cae4fb;
     position: relative; 
     padding: 60px 0 130px 0;
 }
@@ -104,7 +103,7 @@ a:hover{
 
 
 .nav-container{
-    background-color: #e2f0fd;
+    background-color: #cae4fb;
     padding: 0 15%;
     position: relative;
     z-index: 100;
@@ -320,7 +319,7 @@ a:hover{
 }
 
 .small-separation {
-    border-color: #e2f0fd;
+    border-color: #cae4fb;
     border-style: none;
     border-top-style: dotted;
     border-width: 5px;
